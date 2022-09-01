@@ -1,0 +1,61 @@
+{
+  "name": "image-gallerer",
+  "version": "1.0.0",
+  "description": "A ReactJS-based webapp for gallering users' images.",
+  "main": "index.js",
+  "scripts": {
+		"build": "npm run build:css && react-scripts build",
+		"build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+		"eject": "react-scripts eject",
+		"start": "npm run watch:css && react-scripts start",
+		"test": "react-scripts test",
+		"watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/universal-projects/image-gallerer.git"
+  },
+  "keywords": [
+    "image",
+    "gallerer",
+    "image-gallerer"
+  ],
+  "author": "Michael K Macharia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/universal-projects/image-gallerer/issues"
+  },
+  "homepage": "https://github.com/universal-projects/image-gallerer#readme",
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+		"colors": "^1.4.0",
+		"dotenv": "^8.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.2.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
